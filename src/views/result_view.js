@@ -13,7 +13,7 @@ ResultView.prototype.bindEvents = function () {
 
 ResultView.prototype.displayResult = function (result) {
   const resultElement = document.querySelector("#result")
-  resultElement.textContent = `The number ${result} is a Prime Number!!!`
+  resultElement.textContent = `${result}`
 };
 
 module.exports = ResultView;

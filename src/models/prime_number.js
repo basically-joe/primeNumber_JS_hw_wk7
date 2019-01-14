@@ -14,14 +14,14 @@ PrimeChecker.prototype.bindEvents = function () {
 
 PrimeChecker.prototype.numberIsPrime = function (number) {
   if (number <= 1) {
-    return false;
+    return `The number ${event.detail} isn't a Prime Number!!!`;
   }
   for (let i = 2; i < number; i++) {
     if (number % i === 0) {
-        return false;
+        return `The number ${event.detail} isn't a Prime Number!!!`;
     }
   }
-  return true;
+  return `The number ${event.detail} is a Prime Number!!! Well done!!!`;
 };
 
 module.exports = PrimeChecker;
